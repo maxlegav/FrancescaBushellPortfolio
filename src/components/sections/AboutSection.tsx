@@ -21,7 +21,7 @@ const certifications = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="section-padding bg-dark text-white">
+    <section id="about" className="section-padding bg-slate-900 text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
@@ -49,7 +49,7 @@ const AboutSection = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-heading font-semibold text-h2-mobile md:text-h2 text-white mb-6">
+            <h2 className="font-heading font-semibold text-3xl md:text-5xl text-white mb-6">
               About Me
             </h2>
 
@@ -68,7 +68,7 @@ const AboutSection = () => {
                 target audiences.
               </p>
 
-              <h3 className="font-heading font-semibold text-xl text-primary mt-8 mb-4">
+              <h3 className="font-heading font-semibold text-xl text-blue-400 mt-8 mb-4">
                 My Values
               </h3>
 
@@ -82,13 +82,13 @@ const AboutSection = () => {
                     viewport={{ once: true }}
                     className="flex items-center"
                   >
-                    <FaCheck className="text-primary mr-2 flex-shrink-0" />
+                    <FaCheck className="text-green-500 mr-2 flex-shrink-0" />
                     <span className="text-gray-300">{value}</span>
                   </motion.li>
                 ))}
               </ul>
 
-              <h3 className="font-heading font-semibold text-xl text-primary mt-8 mb-4">
+              <h3 className="font-heading font-semibold text-xl text-blue-400 mt-8 mb-4">
                 Education & Certifications
               </h3>
 
@@ -102,7 +102,7 @@ const AboutSection = () => {
                     viewport={{ once: true }}
                     className="flex items-center"
                   >
-                    <span className="text-primary mr-2">•</span>
+                    <span className="text-blue-400 mr-2">•</span>
                     <span className="text-gray-300">{cert}</span>
                   </motion.li>
                 ))}
@@ -125,7 +125,7 @@ const AboutSection = () => {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="btn bg-[#0077B5] text-white hover:bg-[#0077B5]/90 flex items-center gap-2"
+                className="btn bg-blue-600 text-white hover:bg-blue-700 flex items-center gap-2"
               >
                 <FaLinkedin /> Connect on LinkedIn
               </motion.a>
@@ -134,7 +134,7 @@ const AboutSection = () => {
                 href="mailto:contact@francescabushell.com"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="btn bg-white text-dark hover:bg-gray-100 flex items-center gap-2"
+                className="btn bg-white text-slate-900 hover:bg-gray-100 flex items-center gap-2"
               >
                 <FaEnvelope /> Send an Email
               </motion.a>

@@ -16,9 +16,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Francesca Bushell - Marketing International",
+  title: "Francesca Bushell - International Marketing",
   description:
-    "Spécialiste en marketing international, j'accompagne les marques dans leur expansion mondiale grâce à une communication adaptée et stratégique",
+    "International marketing specialist helping brands expand worldwide through strategic and culturally adapted communication",
 };
 
 export default function RootLayout({
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} ${poppins.variable} antialiased`}>
         {children}
       </body>

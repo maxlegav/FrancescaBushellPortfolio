@@ -19,7 +19,6 @@ module.exports = {
           secondary: "#6B7280", // Gris moyen
           light: "#F8FAFC", // Texte clair pour fonds foncés
         },
-        background: "#FFFFFF", // Blanc
       },
       fontFamily: {
         sans: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"],

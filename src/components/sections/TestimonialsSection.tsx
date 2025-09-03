@@ -84,13 +84,13 @@ const TestimonialCard = ({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true, margin: "-50px" }}
-      className="bg-white rounded-lg shadow-md p-6 border-l-4 border-primary hover:shadow-xl transition-shadow"
+      className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-600 hover:shadow-xl transition-shadow"
     >
-      <FaQuoteLeft className="text-primary/20 text-4xl mb-4" />
-      <p className="italic mb-6 text-text-secondary">{quote}</p>
+      <FaQuoteLeft className="text-blue-200 text-4xl mb-4" />
+      <p className="italic mb-6 text-gray-600">{quote}</p>
       <div>
-        <p className="font-semibold text-text-primary">{name}</p>
-        <p className="text-sm text-text-secondary">{position}</p>
+        <p className="font-semibold text-gray-900">{name}</p>
+        <p className="text-sm text-gray-500">{position}</p>
       </div>
     </motion.div>
   );
@@ -109,7 +109,7 @@ const CaseStudyCard = ({ title, results, index }: CaseStudyCardProps) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true, margin: "-50px" }}
-      className="bg-darkBlue text-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow"
+      className="bg-blue-900 text-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow"
     >
       <h3 className="font-heading font-semibold text-xl text-white mb-4">
         {title}
@@ -117,14 +117,14 @@ const CaseStudyCard = ({ title, results, index }: CaseStudyCardProps) => {
       <ul className="space-y-2">
         {results.map((result, i) => (
           <li key={i} className="flex items-start">
-            <span className="text-primary mr-2 mt-1">•</span>
+            <span className="text-blue-400 mr-2 mt-1">•</span>
             <span className="text-gray-300">{result}</span>
           </li>
         ))}
       </ul>
 
       <div className="mt-6 pt-4 border-t border-gray-700">
-        <button className="text-white flex items-center gap-2 font-medium hover:text-primary transition-colors">
+        <button className="text-white flex items-center gap-2 font-medium hover:text-blue-400 transition-colors">
           View Full Case Study <FaArrowRight className="text-sm" />
         </button>
       </div>
@@ -134,7 +134,7 @@ const CaseStudyCard = ({ title, results, index }: CaseStudyCardProps) => {
 
 const TestimonialsSection = () => {
   return (
-    <section className="section-padding bg-gradient-to-b from-lightBlue to-white">
+    <section className="section-padding bg-gradient-to-b from-blue-100 to-white">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -143,12 +143,12 @@ const TestimonialsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="font-heading font-semibold text-h2-mobile md:text-h2 text-darkBlue mb-4">
+          <h2 className="font-heading font-semibold text-3xl md:text-5xl text-blue-900 mb-4">
             Testimonials & Results
           </h2>
-          <p className="text-text-secondary max-w-3xl mx-auto text-lg">
-            Discover how I&apos;ve helped my clients succeed in their international
-            expansion
+          <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+            Discover how I&apos;ve helped my clients succeed in their
+            international expansion
           </p>
         </motion.div>
 
@@ -163,7 +163,7 @@ const TestimonialsSection = () => {
           ))}
         </div>
 
-        <h3 className="font-heading font-semibold text-2xl text-darkBlue mb-8 text-center">
+        <h3 className="font-heading font-semibold text-2xl text-blue-900 mb-8 text-center">
           Case Studies
         </h3>
 
@@ -187,7 +187,7 @@ const TestimonialsSection = () => {
 
         {/* Partners - this would be replaced with actual logos */}
         <div className="mt-16">
-          <h3 className="font-heading font-semibold text-xl text-text-primary mb-6 text-center">
+          <h3 className="font-heading font-semibold text-xl text-gray-900 mb-6 text-center">
             They Trust Me
           </h3>
           <div className="flex flex-wrap justify-center items-center gap-8">
@@ -196,7 +196,7 @@ const TestimonialsSection = () => {
                 key={index}
                 className="bg-white rounded-lg shadow-sm p-4 w-32 h-16 flex items-center justify-center hover:shadow-md transition-shadow"
               >
-                <span className="text-text-secondary">{partner}</span>
+                <span className="text-gray-500">{partner}</span>
               </div>
             ))}
           </div>

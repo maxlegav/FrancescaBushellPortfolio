@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-dark shadow-md py-2" : "bg-transparent py-4"
+        scrolled ? "bg-slate-900 shadow-md py-2" : "bg-transparent py-4"
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
@@ -47,31 +47,31 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center space-x-6">
           <Link
             href="/"
-            className="text-white hover:text-primary transition-colors"
+            className="text-white hover:text-blue-400 transition-colors"
           >
             Home
           </Link>
           <Link
             href="#services"
-            className="text-white hover:text-primary transition-colors"
+            className="text-white hover:text-blue-400 transition-colors"
           >
             Services
           </Link>
           <Link
             href="#process"
-            className="text-white hover:text-primary transition-colors"
+            className="text-white hover:text-blue-400 transition-colors"
           >
             Process
           </Link>
           <Link
             href="#about"
-            className="text-white hover:text-primary transition-colors"
+            className="text-white hover:text-blue-400 transition-colors"
           >
             About
           </Link>
           <Link
             href="#contact"
-            className="text-white hover:text-primary transition-colors"
+            className="text-white hover:text-blue-400 transition-colors"
           >
             Contact
           </Link>
@@ -83,7 +83,7 @@ const Navbar = () => {
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-primary transition-colors"
+            className="text-white hover:text-blue-400 transition-colors"
             aria-label="LinkedIn"
           >
             <FaLinkedin size={20} />
@@ -92,14 +92,14 @@ const Navbar = () => {
             href="/cv-francesca-bushell.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-primary transition-colors"
+            className="text-white hover:text-blue-400 transition-colors"
             aria-label="CV"
           >
             <FaFileAlt size={18} />
           </a>
           <a
             href="mailto:contact@francescabushell.com"
-            className="text-white hover:text-primary transition-colors"
+            className="text-white hover:text-blue-400 transition-colors"
             aria-label="Email"
           >
             <FaEnvelope size={18} />
@@ -143,38 +143,38 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-dark shadow-lg p-4 flex flex-col space-y-4 border-t border-gray-800">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-slate-900 shadow-lg p-4 flex flex-col space-y-4 border-t border-gray-800">
             <Link
               href="/"
-              className="text-white hover:text-primary transition-colors"
+              className="text-white hover:text-blue-400 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Home
             </Link>
             <Link
               href="#services"
-              className="text-white hover:text-primary transition-colors"
+              className="text-white hover:text-blue-400 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Services
             </Link>
             <Link
               href="#process"
-              className="text-white hover:text-primary transition-colors"
+              className="text-white hover:text-blue-400 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Process
             </Link>
             <Link
               href="#about"
-              className="text-white hover:text-primary transition-colors"
+              className="text-white hover:text-blue-400 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               About
             </Link>
             <Link
               href="#contact"
-              className="text-white hover:text-primary transition-colors"
+              className="text-white hover:text-blue-400 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Contact
@@ -186,7 +186,7 @@ const Navbar = () => {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-primary transition-colors"
+                className="text-white hover:text-blue-400 transition-colors"
                 aria-label="LinkedIn"
               >
                 <FaLinkedin size={20} />
@@ -195,14 +195,14 @@ const Navbar = () => {
                 href="/cv-francesca-bushell.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-primary transition-colors"
+                className="text-white hover:text-blue-400 transition-colors"
                 aria-label="CV"
               >
                 <FaFileAlt size={18} />
               </a>
               <a
                 href="mailto:contact@francescabushell.com"
-                className="text-white hover:text-primary transition-colors"
+                className="text-white hover:text-blue-400 transition-colors"
                 aria-label="Email"
               >
                 <FaEnvelope size={18} />

@@ -12,7 +12,7 @@ import {
 const servicesData = [
   {
     id: 1,
-    icon: <FaChartLine className="text-4xl text-primary" />,
+    icon: <FaChartLine className="text-4xl text-blue-600" />,
     title: "Market Analysis",
     items: [
       "Target market research",
@@ -22,7 +22,7 @@ const servicesData = [
   },
   {
     id: 2,
-    icon: <FaComments className="text-4xl text-primary" />,
+    icon: <FaComments className="text-4xl text-blue-600" />,
     title: "Communication Strategy",
     items: [
       "Cultural message adaptation",
@@ -32,7 +32,7 @@ const servicesData = [
   },
   {
     id: 3,
-    icon: <FaGlobeEurope className="text-4xl text-primary" />,
+    icon: <FaGlobeEurope className="text-4xl text-blue-600" />,
     title: "International Digital Marketing",
     items: [
       "Localized advertising campaigns",
@@ -42,7 +42,7 @@ const servicesData = [
   },
   {
     id: 4,
-    icon: <FaRocket className="text-4xl text-primary" />,
+    icon: <FaRocket className="text-4xl text-blue-600" />,
     title: "Launch Support",
     items: [
       "Support during launch",
@@ -59,7 +59,6 @@ interface ServiceCardProps {
   index: number;
 }
 
-// Card component for each service
 const ServiceCard = ({ icon, title, items, index }: ServiceCardProps) => {
   return (
     <motion.div
@@ -69,16 +68,16 @@ const ServiceCard = ({ icon, title, items, index }: ServiceCardProps) => {
       viewport={{ once: true, margin: "-50px" }}
       className="service-card bg-white rounded-lg shadow-md p-6 flex flex-col h-full"
     >
-      <div className="flex items-center justify-center h-16 w-16 bg-lightBlue rounded-full mb-4 mx-auto">
+      <div className="flex items-center justify-center h-16 w-16 bg-blue-100 rounded-full mb-4 mx-auto">
         {icon}
       </div>
-      <h3 className="text-h3 font-heading font-semibold text-center mb-4">
+      <h3 className="text-xl font-heading font-semibold text-center mb-4">
         {title}
       </h3>
       <ul className="space-y-2 mt-auto">
         {items.map((item, i) => (
           <li key={i} className="flex items-start">
-            <span className="text-primary mr-2 mt-1">•</span>
+            <span className="text-blue-600 mr-2 mt-1">•</span>
             <span>{item}</span>
           </li>
         ))}
@@ -86,7 +85,7 @@ const ServiceCard = ({ icon, title, items, index }: ServiceCardProps) => {
       <div className="mt-6 pt-4 border-t border-gray-100">
         <a
           href="#contact"
-          className="flex items-center justify-center gap-2 text-primary font-medium hover:text-darkBlue transition-colors"
+          className="flex items-center justify-center gap-2 text-blue-600 font-medium hover:text-blue-800 transition-colors"
         >
           Learn More <FaArrowRight className="text-sm" />
         </a>
@@ -97,7 +96,7 @@ const ServiceCard = ({ icon, title, items, index }: ServiceCardProps) => {
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="section-padding bg-darkBlue">
+    <section id="services" className="section-padding bg-blue-900">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -106,7 +105,7 @@ const ServicesSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="font-heading font-semibold text-h2-mobile md:text-h2 text-white mb-4">
+          <h2 className="font-heading font-semibold text-3xl md:text-5xl text-white mb-4">
             My Services
           </h2>
           <p className="text-gray-300 max-w-3xl mx-auto text-lg">

@@ -54,7 +54,7 @@ const ProcessSection = () => {
   return (
     <section
       id="process"
-      className="section-padding bg-gradient-to-b from-white to-lightBlue"
+      className="section-padding bg-gradient-to-b from-white to-blue-100"
     >
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
@@ -64,10 +64,10 @@ const ProcessSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="font-heading font-semibold text-h2-mobile md:text-h2 text-darkBlue mb-4">
+          <h2 className="font-heading font-semibold text-3xl md:text-5xl text-blue-900 mb-4">
             My 5-Step Process
           </h2>
-          <p className="text-text-primary max-w-3xl mx-auto text-lg">
+          <p className="text-gray-900 max-w-3xl mx-auto text-lg">
             A proven methodology to ensure the success of your international
             expansion
           </p>
@@ -75,7 +75,7 @@ const ProcessSection = () => {
 
         <div className="relative">
           {/* Timeline Line */}
-          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-primary -translate-x-1/2 z-0"></div>
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-blue-600 -translate-x-1/2 z-0"></div>
 
           {/* Timeline Steps */}
           <div className="space-y-12 md:space-y-0 relative z-10">
@@ -96,22 +96,22 @@ const ProcessSection = () => {
                   <div
                     className={`bg-white shadow-lg rounded-lg p-6 ${
                       index % 2 === 0 ? "md:mr-8" : "md:ml-8"
-                    } border-l-4 border-primary`}
+                    } border-l-4 border-blue-600`}
                   >
-                    <h3 className="font-heading font-semibold text-xl text-primary mb-2">
+                    <h3 className="font-heading font-semibold text-xl text-blue-600 mb-2">
                       Step {step.id}: {step.title}
                     </h3>
                     <ul className="space-y-2">
                       {step.description.map((item, i) => (
                         <li key={i} className="flex items-start">
-                          <span className="text-primary mr-2 mt-1">•</span>
+                          <span className="text-blue-600 mr-2 mt-1">•</span>
                           <span>{item}</span>
                         </li>
                       ))}
                     </ul>
 
                     <div className="mt-4 pt-2">
-                      <button className="text-primary hover:text-darkBlue transition-colors font-medium text-sm">
+                      <button className="text-blue-600 hover:text-blue-800 transition-colors font-medium text-sm">
                         Learn more
                       </button>
                     </div>
@@ -124,7 +124,7 @@ const ProcessSection = () => {
                   whileInView={{ scale: 1 }}
                   transition={{ duration: 0.3 }}
                   viewport={{ once: true, margin: "-100px" }}
-                  className="flex items-center justify-center h-14 w-14 bg-darkBlue rounded-full my-4 md:my-0 text-white font-semibold shadow-lg z-10"
+                  className="flex items-center justify-center h-14 w-14 bg-blue-900 rounded-full my-4 md:my-0 text-white font-semibold shadow-lg z-10"
                 >
                   {step.id}
                 </motion.div>

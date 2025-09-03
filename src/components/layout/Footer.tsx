@@ -20,7 +20,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-dark text-white" id="contact">
+    <footer className="bg-slate-900 text-white" id="contact">
       <div className="container mx-auto px-4 md:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Contact Information */}
@@ -30,36 +30,36 @@ const Footer = () => {
             </h3>
             <ul className="space-y-3">
               <li className="flex items-center">
-                <FaEnvelope className="mr-3 text-primary" />
+                <FaEnvelope className="mr-3 text-blue-400" />
                 <a
                   href="mailto:contact@francescabushell.com"
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-blue-400 transition-colors"
                 >
                   contact@francescabushell.com
                 </a>
               </li>
               <li className="flex items-center">
-                <FaLinkedin className="mr-3 text-primary" />
+                <FaLinkedin className="mr-3 text-blue-400" />
                 <a
                   href="https://linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-blue-400 transition-colors"
                 >
                   LinkedIn
                 </a>
               </li>
               <li className="flex items-center">
-                <FaPhoneAlt className="mr-3 text-primary" />
+                <FaPhoneAlt className="mr-3 text-blue-400" />
                 <a
                   href="tel:+33123456789"
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-blue-400 transition-colors"
                 >
                   +33 1 23 45 67 89
                 </a>
               </li>
               <li className="flex items-start">
-                <FaMapMarkerAlt className="mr-3 text-primary mt-1" />
+                <FaMapMarkerAlt className="mr-3 text-blue-400 mt-1" />
                 <span>Paris, France</span>
               </li>
             </ul>
@@ -67,7 +67,7 @@ const Footer = () => {
             <div className="mt-6">
               <button
                 onClick={scrollToTop}
-                className="flex items-center gap-2 text-primary hover:text-white transition-colors"
+                className="flex items-center gap-2 text-blue-400 hover:text-white transition-colors"
               >
                 <FaArrowUp /> Back to top
               </button>
@@ -81,14 +81,17 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="hover:text-primary transition-colors">
+                <Link
+                  href="/"
+                  className="hover:text-blue-400 transition-colors"
+                >
                   Home
                 </Link>
               </li>
               <li>
                 <Link
                   href="#services"
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-blue-400 transition-colors"
                 >
                   Services
                 </Link>
@@ -96,7 +99,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="#process"
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-blue-400 transition-colors"
                 >
                   Process
                 </Link>
@@ -104,7 +107,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="#about"
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-blue-400 transition-colors"
                 >
                   About
                 </Link>
@@ -116,17 +119,17 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <a href="#" className="hover:text-blue-400 transition-colors">
                   Blog
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <a href="#" className="hover:text-blue-400 transition-colors">
                   Case Studies
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <a href="#" className="hover:text-blue-400 transition-colors">
                   FAQs
                 </a>
               </li>
@@ -150,7 +153,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your email"
-                className="px-4 py-2 rounded-md bg-gray-800 border border-gray-700 focus:outline-none focus:border-primary"
+                className="px-4 py-2 rounded-md bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-400"
                 required
               />
               <button
@@ -175,13 +178,13 @@ const Footer = () => {
           <div className="flex space-x-4">
             <Link
               href="/legal-notice"
-              className="text-sm text-gray-400 hover:text-primary transition-colors"
+              className="text-sm text-gray-400 hover:text-blue-400 transition-colors"
             >
               Legal Notice
             </Link>
             <Link
               href="/privacy-policy"
-              className="text-sm text-gray-400 hover:text-primary transition-colors"
+              className="text-sm text-gray-400 hover:text-blue-400 transition-colors"
             >
               Privacy Policy
             </Link>

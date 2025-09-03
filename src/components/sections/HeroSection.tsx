@@ -6,9 +6,9 @@ import { FaArrowRight } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 pb-16 bg-dark">
+    <section className="relative min-h-screen flex items-center pt-20 pb-16 bg-slate-900">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-dark to-darkBlue z-0 opacity-90"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 to-blue-900 z-0 opacity-90"></div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -19,7 +19,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5 }}
             className="order-2 lg:order-1"
           >
-            <h1 className="font-heading font-bold text-h1-mobile md:text-h1 text-white mb-4">
+            <h1 className="font-heading font-bold text-4xl md:text-6xl text-white mb-4">
               Grow Your Brand Internationally
             </h1>
 
@@ -42,7 +42,7 @@ const HeroSection = () => {
                 href="#process"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="btn btn-outline text-white border-white"
+                className="btn btn-outline text-white border-white hover:bg-white hover:text-slate-900"
               >
                 My Process
               </motion.a>
@@ -51,7 +51,7 @@ const HeroSection = () => {
                 href="#contact"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="btn flex items-center gap-2 bg-white text-darkBlue hover:bg-lightBlue"
+                className="btn flex items-center gap-2 bg-white text-blue-900 hover:bg-blue-50"
               >
                 Contact Me <FaArrowRight className="text-sm" />
               </motion.a>
