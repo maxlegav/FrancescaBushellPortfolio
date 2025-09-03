@@ -56,7 +56,7 @@ const AboutSection = () => {
             <div className="prose max-w-none text-gray-300">
               <p className="text-lg mb-4">
                 With a degree in international marketing and corporate
-                experience across multiple countries, I've developed unique
+                experience across multiple countries, I&apos;ve developed unique
                 expertise in adapting marketing strategies to different global
                 markets.
               </p>

@@ -147,7 +147,7 @@ const TestimonialsSection = () => {
             Testimonials & Results
           </h2>
           <p className="text-text-secondary max-w-3xl mx-auto text-lg">
-            Discover how I've helped my clients succeed in their international
+            Discover how I&apos;ve helped my clients succeed in their international
             expansion
           </p>
         </motion.div>
