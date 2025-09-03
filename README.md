@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio de Francesca Bushell - Marketing International
 
-## Getting Started
+Ce projet est un site web portfolio professionnel pour Francesca Bushell, spécialiste en marketing international.
 
-First, run the development server:
+## Technologies utilisées
+
+- **Frontend**: Next.js (React)
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Déploiement**: Vercel
+
+## Structure du site
+
+1. **Header & Navigation**
+
+   - Logo/Nom
+   - Menu principal
+   - Liens externes (LinkedIn, CV, Email)
+
+2. **Section Hero**
+
+   - Titre principal et sous-titre
+   - Photo professionnelle
+   - CTA Button
+
+3. **Section Services**
+
+   - 4 cards de services avec icônes
+
+4. **Section Processus**
+
+   - Timeline verticale avec 5 étapes
+
+5. **Section À Propos**
+
+   - Bio et photo
+   - Valeurs
+   - Formations et certifications
+
+6. **Section Témoignages/Cas d'Étude**
+
+   - Témoignages clients
+   - Cas d'études avec résultats
+   - Logos partenaires
+
+7. **Footer**
+   - Coordonnées
+   - Liens réseaux sociaux
+   - Mentions légales
+
+## Installation et démarrage
 
 ```bash
+# Installer les dépendances
+npm install
+
+# Lancer le serveur de développement
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Construire pour la production
+npm run build
+
+# Lancer en mode production
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Personnalisation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Pour personnaliser ce site:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Remplacer les images placeholder dans le dossier `public/assets`
+2. Mettre à jour le CV PDF dans `public/assets`
+3. Modifier les textes dans les composants de la section `src/components/sections`
+4. Ajuster les couleurs dans `tailwind.config.js` si nécessaire
 
-## Learn More
+## Notes
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Le design est entièrement responsive (mobile, tablette, desktop)
+- Les animations sont optimisées pour les performances
+- Les images doivent être optimisées avant d'être ajoutées au projet
