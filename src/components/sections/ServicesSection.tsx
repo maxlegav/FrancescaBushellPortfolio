@@ -37,7 +37,7 @@ const servicesData = [
     items: [
       "Localized advertising campaigns",
       "Social media management",
-      "Multilingual SEO",
+      "Online brand development",
     ],
   },
   {

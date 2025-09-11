@@ -80,7 +80,7 @@ const Navbar = () => {
         {/* Social Links & CTA - Desktop */}
         <div className="hidden md:flex items-center space-x-4">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/francesca-bushell-7a34b5255/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-blue-400 transition-colors"
@@ -98,7 +98,7 @@ const Navbar = () => {
             <FaFileAlt size={18} />
           </a>
           <a
-            href="mailto:contact@francescabushell.com"
+            href="mailto:francescaiidaolivia@gmail.com"
             className="text-white hover:text-blue-400 transition-colors"
             aria-label="Email"
           >

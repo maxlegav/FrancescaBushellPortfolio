@@ -32,16 +32,16 @@ const Footer = () => {
               <li className="flex items-center">
                 <FaEnvelope className="mr-3 text-blue-400" />
                 <a
-                  href="mailto:contact@francescabushell.com"
+                  href="mailto:francescaiidaolivia@gmail.com"
                   className="hover:text-blue-400 transition-colors"
                 >
-                  contact@francescabushell.com
+                  francescaiidaolivia@gmail.com
                 </a>
               </li>
               <li className="flex items-center">
                 <FaLinkedin className="mr-3 text-blue-400" />
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/francesca-bushell-7a34b5255/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-blue-400 transition-colors"
@@ -55,12 +55,12 @@ const Footer = () => {
                   href="tel:+33123456789"
                   className="hover:text-blue-400 transition-colors"
                 >
-                  +33 1 23 45 67 89
+                  +32 472 32 00 24
                 </a>
               </li>
               <li className="flex items-start">
                 <FaMapMarkerAlt className="mr-3 text-blue-400 mt-1" />
-                <span>Paris, France</span>
+                <span>London, UK</span>
               </li>
             </ul>
 
@@ -143,7 +143,7 @@ const Footer = () => {
             </h3>
             <p className="mb-2">International Marketing Specialist</p>
             <p className="text-sm text-gray-400 mb-6">
-              Self-employed business based in France
+              Self-employed business based in the UK
             </p>
 
             <h4 className="font-medium text-white mb-3">

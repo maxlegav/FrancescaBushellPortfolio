@@ -55,8 +55,8 @@ const AboutSection = () => {
 
             <div className="prose max-w-none text-gray-300">
               <p className="text-lg mb-4">
-                With a degree in international marketing and corporate
-                experience across multiple countries, I&apos;ve developed unique
+                After living in multiple countries I aquired a strong experience marketing and corporate
+                experience, I&apos;ve developed unique
                 expertise in adapting marketing strategies to different global
                 markets.
               </p>
@@ -88,25 +88,7 @@ const AboutSection = () => {
                 ))}
               </ul>
 
-              <h3 className="font-heading font-semibold text-xl text-blue-400 mt-8 mb-4">
-                Education & Certifications
-              </h3>
-
-              <ul className="space-y-2">
-                {certifications.map((cert, index) => (
-                  <motion.li
-                    key={index}
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                    className="flex items-center"
-                  >
-                    <span className="text-blue-400 mr-2">•</span>
-                    <span className="text-gray-300">{cert}</span>
-                  </motion.li>
-                ))}
-              </ul>
+             
             </div>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -120,7 +102,7 @@ const AboutSection = () => {
               </motion.a>
 
               <motion.a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/francesca-bushell-7a34b5255/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
@@ -131,7 +113,7 @@ const AboutSection = () => {
               </motion.a>
 
               <motion.a
-                href="mailto:contact@francescabushell.com"
+                href="mailto:francescaiidaolivia@gmail.com"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="btn bg-white text-slate-900 hover:bg-gray-100 flex items-center gap-2"

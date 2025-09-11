@@ -20,24 +20,18 @@ const testimonials: Testimonial[] = [
   {
     id: 1,
     quote:
-      "Francesca helped us expand into the Spanish market with a perfectly tailored marketing strategy. The results exceeded our expectations with 40% growth in the first year.",
-    name: "Marie D.",
-    position: "Marketing Director, Organic Cosmetics Company",
+      "Francesca helped me manage my brand internationally in different markets, expanding into Asia market with a perfectly tailored marketing strategy. The results exceeded our expectations with 40% growth in the first year.",
+    name: "Max Legav",
+    position: "Freelancer and Founder",
   },
   {
     id: 2,
     quote:
-      "Francesca's deep knowledge of Asian markets allowed us to reposition our communication and avoid many cultural pitfalls. Her guidance was invaluable and professional.",
-    name: "Thomas L.",
-    position: "CEO, French Tech Startup",
+      "Francesca's deep knowledge of Scandinavian markets allowed us to reposition our communication and avoid many cultural pitfalls. Her guidance was invaluable and professional.",
+    name: "Adam N.",
+    position: "French Tech Startup",
   },
-  {
-    id: 3,
-    quote:
-      "The international strategy audit conducted by Francesca identified opportunities we hadn't detected. Her methodology is rigorous and her recommendations are always relevant.",
-    name: "Sophie M.",
-    position: "Export Manager, Food Industry SME",
-  },
+  
 ];
 
 const caseStudies: CaseStudy[] = [
@@ -153,7 +147,7 @@ const TestimonialsSection = () => {
         </motion.div>
 
         {/* Testimonials */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard
               key={testimonial.id}
@@ -163,44 +157,6 @@ const TestimonialsSection = () => {
           ))}
         </div>
 
-        <h3 className="font-heading font-semibold text-2xl text-blue-900 mb-8 text-center">
-          Case Studies
-        </h3>
-
-        {/* Case Studies */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          {caseStudies.map((caseStudy, index) => (
-            <CaseStudyCard key={caseStudy.id} {...caseStudy} index={index} />
-          ))}
-        </div>
-
-        <div className="text-center mb-12">
-          <motion.a
-            href="#contact"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="btn btn-dark"
-          >
-            Get Similar Results
-          </motion.a>
-        </div>
-
-        {/* Partners - this would be replaced with actual logos */}
-        <div className="mt-16">
-          <h3 className="font-heading font-semibold text-xl text-gray-900 mb-6 text-center">
-            They Trust Me
-          </h3>
-          <div className="flex flex-wrap justify-center items-center gap-8">
-            {partners.map((partner, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow-sm p-4 w-32 h-16 flex items-center justify-center hover:shadow-md transition-shadow"
-              >
-                <span className="text-gray-500">{partner}</span>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
