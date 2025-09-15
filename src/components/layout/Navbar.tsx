@@ -105,7 +105,7 @@ const Navbar = () => {
             <FaEnvelope size={18} />
           </a>
 
-          <a href="#contact" className="ml-4 btn btn-primary">
+          <a href="#services" className="ml-4 btn btn-primary">
             Get Started
           </a>
         </div>

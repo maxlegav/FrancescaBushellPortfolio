@@ -34,7 +34,7 @@ const AboutSection = () => {
           >
             <div className="relative w-full max-w-md aspect-[4/5] rounded-lg overflow-hidden shadow-xl bg-white p-4">
               <Image
-                src="/AutoLogo.png"
+                src="/Image.jpeg"
                 alt="Francesca Bushell - Professional"
                 fill
                 style={{ objectFit: "contain", objectPosition: "center" }}

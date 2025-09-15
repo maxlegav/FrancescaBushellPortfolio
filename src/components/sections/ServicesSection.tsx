@@ -84,7 +84,7 @@ const ServiceCard = ({ icon, title, items, index }: ServiceCardProps) => {
       </ul>
       <div className="mt-6 pt-4 border-t border-gray-100">
         <a
-          href="#contact"
+          href="#process"
           className="flex items-center justify-center gap-2 text-blue-600 font-medium hover:text-blue-800 transition-colors"
         >
           Learn More <FaArrowRight className="text-sm" />

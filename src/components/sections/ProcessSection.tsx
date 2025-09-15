@@ -110,11 +110,7 @@ const ProcessSection = () => {
                       ))}
                     </ul>
 
-                    <div className="mt-4 pt-2">
-                      <button className="text-blue-600 hover:text-blue-800 transition-colors font-medium text-sm">
-                        Learn more
-                      </button>
-                    </div>
+                    
                   </div>
                 </motion.div>
 

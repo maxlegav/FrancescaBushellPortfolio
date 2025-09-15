@@ -114,26 +114,7 @@ const Footer = () => {
               </li>
             </ul>
 
-            <h3 className="font-heading font-semibold text-lg mb-4 mt-6 text-white">
-              Resources
-            </h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
-                  Case Studies
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-400 transition-colors">
-                  FAQs
-                </a>
-              </li>
-            </ul>
+           
           </div>
 
           {/* Company Info & Newsletter */}

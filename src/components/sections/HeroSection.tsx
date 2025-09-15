@@ -67,7 +67,7 @@ const HeroSection = () => {
           >
             <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden shadow-xl border-4 border-white bg-white/80 p-4">
               <Image
-                src="/AutoLogo.png"
+                src="/Image.jpeg"
                 alt="Francesca Bushell - International Marketing"
                 fill
                 style={{ objectFit: "contain", objectPosition: "center" }}
