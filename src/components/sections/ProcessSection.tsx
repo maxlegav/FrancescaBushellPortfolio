@@ -16,7 +16,7 @@ const processSteps = [
     id: 2,
     title: "Research & Insights",
     description: [
-      "In-depth market research",
+      "Market research overview",
       "Cultural and behavioral analysis",
       "Competitive benchmarking",
     ],

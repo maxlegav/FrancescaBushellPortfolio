@@ -122,7 +122,7 @@ const Footer = () => {
             <h3 className="font-heading font-semibold text-lg mb-4 text-white">
               Francesca Bushell
             </h3>
-            <p className="mb-2">International Marketing Specialist</p>
+            <p className="mb-2">International Marketing Advisor</p>
             <p className="text-sm text-gray-400 mb-6">
               Self-employed business based in the UK
             </p>

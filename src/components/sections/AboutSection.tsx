@@ -32,9 +32,9 @@ const AboutSection = () => {
             viewport={{ once: true }}
             className="flex justify-center lg:justify-start"
           >
-            <div className="relative w-full max-w-md aspect-[4/5] rounded-lg overflow-hidden shadow-xl bg-white p-4">
+            <div className="relative w-full max-w-md aspect-[4/5] rounded-lg overflow-hidden shadow-xl  p-4">
               <Image
-                src="/Image.jpeg"
+                src="/francesca.png"
                 alt="Francesca Bushell - Professional"
                 fill
                 style={{ objectFit: "contain", objectPosition: "center" }}

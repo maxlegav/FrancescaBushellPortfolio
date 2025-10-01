@@ -28,7 +28,7 @@ const testimonials: Testimonial[] = [
     id: 2,
     quote:
       "Francesca's deep knowledge of Scandinavian markets allowed us to reposition our communication and avoid many cultural pitfalls. Her guidance was invaluable and professional.",
-    name: "Adam N.",
+    name: "Adam Nasreddine",
     position: "French Tech Startup",
   },
   

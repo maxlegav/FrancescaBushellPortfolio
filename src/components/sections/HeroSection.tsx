@@ -24,7 +24,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl">
-              International marketing specialist helping brands expand worldwide
+              International marketing services helping brands expand worldwide
               through strategic and culturally adapted communication
             </p>
 
@@ -67,10 +67,14 @@ const HeroSection = () => {
           >
             <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden shadow-xl border-4 border-white bg-white/80 p-4">
               <Image
-                src="/Image.jpeg"
+                src="/imagelogo.jpeg"
                 alt="Francesca Bushell - International Marketing"
                 fill
-                style={{ objectFit: "contain", objectPosition: "center" }}
+                style={{
+                  objectFit: "contain",
+                  objectPosition: "center",
+                  transform: "scale(1.5)",
+                }}
                 priority
               />
             </div>

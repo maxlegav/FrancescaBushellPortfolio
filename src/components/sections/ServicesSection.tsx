@@ -10,18 +10,9 @@ import {
 } from "react-icons/fa";
 
 const servicesData = [
+  
   {
     id: 1,
-    icon: <FaChartLine className="text-4xl text-blue-600" />,
-    title: "Market Analysis",
-    items: [
-      "Target market research",
-      "Competitive analysis",
-      "Opportunity identification",
-    ],
-  },
-  {
-    id: 2,
     icon: <FaComments className="text-4xl text-blue-600" />,
     title: "Communication Strategy",
     items: [
@@ -31,7 +22,7 @@ const servicesData = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     icon: <FaGlobeEurope className="text-4xl text-blue-600" />,
     title: "International Digital Marketing",
     items: [
@@ -41,7 +32,7 @@ const servicesData = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     icon: <FaRocket className="text-4xl text-blue-600" />,
     title: "Launch Support",
     items: [
@@ -113,7 +104,7 @@ const ServicesSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
           {servicesData.map((service, index) => (
             <ServiceCard key={service.id} {...service} index={index} />
           ))}
