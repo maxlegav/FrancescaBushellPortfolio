@@ -89,7 +89,7 @@ const Navbar = () => {
             <FaLinkedin size={20} />
           </a>
           <a
-            href="/cv-francesca-bushell.pdf"
+            href="/francescacv.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-blue-400 transition-colors"
