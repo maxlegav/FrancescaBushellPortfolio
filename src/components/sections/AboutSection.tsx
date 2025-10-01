@@ -55,17 +55,20 @@ const AboutSection = () => {
 
             <div className="prose max-w-none text-gray-300">
               <p className="text-lg mb-4">
-                After living in multiple countries I aquired a strong experience marketing and corporate
-                experience, I&apos;ve developed unique
-                expertise in adapting marketing strategies to different global
-                markets.
+                Having lived in over five countries across Europe and Asia, I&apos;ve
+                gained valuable firsthand insight into how cultural differences
+                shape consumer behavior and brand communication. This
+                international experience has given me a unique perspective on
+                adapting marketing strategies for different global markets.
               </p>
 
               <p className="text-lg mb-6">
-                Passionate about cultural differences and their impact on brand
-                communication, I created my business to help companies expand
-                internationally with relevant strategies tailored to their
-                target audiences.
+              I
+                founded Brand Orbit to help companies navigate the complexities
+                of international expansion with culturally relevant,
+                audience-focused strategies. My approach combines practical
+                cross-cultural knowledge with a genuine passion for helping
+                brands communicate authentically across borders
               </p>
 
               <h3 className="font-heading font-semibold text-xl text-blue-400 mt-8 mb-4">
@@ -87,8 +90,6 @@ const AboutSection = () => {
                   </motion.li>
                 ))}
               </ul>
-
-             
             </div>
 
             <div className="mt-8 flex flex-wrap gap-4">

@@ -20,14 +20,14 @@ const testimonials: Testimonial[] = [
   {
     id: 1,
     quote:
-      "Francesca helped me manage my brand internationally in different markets, expanding into Asia market with a perfectly tailored marketing strategy. The results exceeded our expectations with 40% growth in the first year.",
+      "Francesca provided valuable insights for our expansion into the Nordic region. Her cultural context and understanding of Scandinavian consumer behavior helped us adapt our messaging for our upcoming campaign launch and avoid several potential missteps.",
     name: "Max Legav",
     position: "Freelancer and Founder",
   },
   {
     id: 2,
     quote:
-      "Francesca's deep knowledge of Scandinavian markets allowed us to reposition our communication and avoid many cultural pitfalls. Her guidance was invaluable and professional.",
+      "Francesca helped us develop a marketing approach for entering the Asian market. Her research into South Korean cultural preferences and local marketing strategies was detailed and useful. She brought fresh ideas and was professional throughout our collaboration.",
     name: "Adam Nasreddine",
     position: "French Tech Startup",
   },
