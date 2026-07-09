@@ -1,19 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaQuoteLeft, FaArrowRight } from "react-icons/fa";
+import { FaQuoteLeft } from "react-icons/fa";
 
 interface Testimonial {
   id: number;
   quote: string;
   name: string;
   position: string;
-}
-
-interface CaseStudy {
-  id: number;
-  title: string;
-  results: string[];
 }
 
 const testimonials: Testimonial[] = [
@@ -31,33 +25,7 @@ const testimonials: Testimonial[] = [
     name: "Adam Nasreddine",
     position: "French Tech Startup",
   },
-  
 ];
-
-const caseStudies: CaseStudy[] = [
-  {
-    id: 1,
-    title: "French Brand Launch in Germany",
-    results: [
-      "In-depth market research of the local sector",
-      "Complete communication adaptation",
-      "+75% brand awareness after 6 months of campaign",
-      "Advertising ROI improved by 35%",
-    ],
-  },
-  {
-    id: 2,
-    title: "Multilingual SEO Optimization",
-    results: [
-      "Complete audit of 4 language versions of the website",
-      "Redesign of keyword strategy by country",
-      "+120% organic traffic in 1 year",
-      "Conversion improved by 25% in targeted markets",
-    ],
-  },
-];
-
-const partners = ["Partner 1", "Partner 2", "Partner 3", "Partner 4"];
 
 interface TestimonialCardProps {
   quote: string;
@@ -74,58 +42,24 @@ const TestimonialCard = ({
 }: TestimonialCardProps) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+      transition={{ duration: 0.5, delay: index * 0.15 }}
       viewport={{ once: true, margin: "-50px" }}
-      className="bg-white rounded-2xl shadow-md p-8 border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+      whileHover={{ y: -6 }}
+      className="glass-card p-8 relative overflow-hidden"
     >
-      <FaQuoteLeft className="text-blue-200 text-4xl mb-4" />
-      <p className="italic mb-6 text-gray-600">{quote}</p>
-      <div className="flex items-center gap-3">
-        <div className="h-10 w-10 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-semibold">
+      <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400"></div>
+      <FaQuoteLeft className="text-indigo-400/40 text-4xl mb-5" />
+      <p className="italic mb-8 text-slate-300 leading-relaxed">{quote}</p>
+      <div className="flex items-center gap-4">
+        <div className="h-11 w-11 rounded-full bg-gradient-to-br from-indigo-500 to-cyan-400 flex items-center justify-center text-white font-semibold shadow-lg shadow-indigo-500/30">
           {name.charAt(0)}
         </div>
         <div>
-          <p className="font-semibold text-gray-900">{name}</p>
-          <p className="text-sm text-gray-500">{position}</p>
+          <p className="font-semibold text-white">{name}</p>
+          <p className="text-sm text-slate-500">{position}</p>
         </div>
-      </div>
-    </motion.div>
-  );
-};
-
-interface CaseStudyCardProps {
-  title: string;
-  results: string[];
-  index: number;
-}
-
-const CaseStudyCard = ({ title, results, index }: CaseStudyCardProps) => {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      viewport={{ once: true, margin: "-50px" }}
-      className="bg-blue-900 text-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow"
-    >
-      <h3 className="font-heading font-semibold text-xl text-white mb-4">
-        {title}
-      </h3>
-      <ul className="space-y-2">
-        {results.map((result, i) => (
-          <li key={i} className="flex items-start">
-            <span className="text-blue-400 mr-2 mt-1">•</span>
-            <span className="text-gray-300">{result}</span>
-          </li>
-        ))}
-      </ul>
-
-      <div className="mt-6 pt-4 border-t border-gray-700">
-        <button className="text-white flex items-center gap-2 font-medium hover:text-blue-400 transition-colors">
-          View Full Case Study <FaArrowRight className="text-sm" />
-        </button>
       </div>
     </motion.div>
   );
@@ -133,26 +67,28 @@ const CaseStudyCard = ({ title, results, index }: CaseStudyCardProps) => {
 
 const TestimonialsSection = () => {
   return (
-    <section className="section-padding bg-gradient-to-b from-blue-100 to-white">
-      <div className="container mx-auto px-4 md:px-6">
+    <section className="section-padding relative bg-[#050510]">
+      <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-purple-600/10 rounded-full blur-[120px]"></div>
+
+      <div className="container mx-auto px-4 md:px-6 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-16"
         >
-          <h2 className="font-heading font-semibold text-3xl md:text-5xl text-blue-900 mb-4">
-            Testimonials & Results
+          <p className="eyebrow mb-4">Testimonials</p>
+          <h2 className="section-title mb-4">
+            Trusted across <span className="gradient-text">markets.</span>
           </h2>
-          <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+          <p className="text-slate-400 max-w-2xl mx-auto text-lg">
             Discover how I&apos;ve helped my clients succeed in their
             international expansion
           </p>
         </motion.div>
 
-        {/* Testimonials */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard
               key={testimonial.id}
@@ -161,7 +97,6 @@ const TestimonialsSection = () => {
             />
           ))}
         </div>
-
       </div>
     </section>
   );

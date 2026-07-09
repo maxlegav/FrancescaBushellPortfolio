@@ -4,16 +4,10 @@
 
 @layer base {
   :root {
-    --background: #ffffff;
-    --foreground: #1f2937;
-    --primary: #2563eb;
-    --secondary: #f8fafc;
-    --accent: #059669;
-    --dark: #0f172a;
-    --dark-blue: #1e3a8a;
-    --light-blue: #dbeafe;
-    --text-secondary: #6b7280;
-    --text-light: #f8fafc;
+    --background: #050510;
+    --foreground: #e2e8f0;
+    --primary: #6366f1;
+    --accent: #22d3ee;
   }
 
   html {
@@ -25,64 +19,89 @@
     color: var(--foreground);
     font-family: var(--font-sans);
   }
+
+  ::selection {
+    background: rgba(99, 102, 241, 0.4);
+    color: #fff;
+  }
 }
 
 @layer components {
   .btn {
-    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-full shadow-sm transition-all duration-300;
+    @apply inline-flex items-center justify-center px-7 py-3.5 text-base font-medium rounded-full transition-all duration-300;
   }
 
   .btn-primary {
-    @apply bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white shadow-lg shadow-blue-600/25;
+    @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400 text-white shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 hover:brightness-110;
   }
 
-  .btn-secondary {
-    @apply bg-white hover:bg-gray-50 text-gray-900 border border-gray-300;
+  .btn-ghost {
+    @apply bg-white/5 text-white border border-white/15 backdrop-blur-md hover:bg-white/10 hover:border-white/30;
   }
 
-  .btn-dark {
-    @apply bg-slate-900 hover:bg-slate-800 text-white;
-  }
-
-  .btn-outline {
-    @apply bg-transparent hover:bg-blue-50 text-blue-600 border border-blue-600;
-  }
-
-  .dark-section {
-    @apply bg-slate-900 text-slate-100;
+  .btn-light {
+    @apply bg-white text-slate-950 hover:bg-slate-200;
   }
 
   .section-padding {
-    @apply py-16 md:py-24 lg:py-32;
+    @apply py-20 md:py-28 lg:py-36;
   }
 
   .glass-card {
-    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl;
+    @apply bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-3xl;
   }
 
   .badge {
     @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium;
   }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-300 bg-clip-text text-transparent;
+  }
+
+  .section-title {
+    @apply font-heading font-bold text-3xl md:text-5xl text-white tracking-tight;
+  }
+
+  .eyebrow {
+    @apply text-sm font-semibold uppercase tracking-[0.3em] text-indigo-400;
+  }
 }
 
-/* Animation Classes */
-.animate-on-scroll {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+/* Subtle dot grid overlay */
+.bg-grid {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.06) 1px,
+    transparent 1px
+  );
+  background-size: 32px 32px;
 }
 
-.animate-on-scroll.visible {
-  opacity: 1;
-  transform: translateY(0);
+/* Infinite marquee */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
-/* Card Hover Effects */
-.service-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.animate-marquee {
+  animation: marquee 30s linear infinite;
 }
 
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+/* Slow floating blobs */
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(30px, -30px) scale(1.1);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 12s ease-in-out infinite;
 }

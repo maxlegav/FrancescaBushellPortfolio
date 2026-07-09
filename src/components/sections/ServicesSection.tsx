@@ -1,19 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  FaChartLine,
-  FaComments,
-  FaGlobeEurope,
-  FaRocket,
-  FaArrowRight,
-} from "react-icons/fa";
+import { FaComments, FaGlobeEurope, FaRocket } from "react-icons/fa";
 
 const servicesData = [
-  
   {
     id: 1,
-    icon: <FaComments className="text-4xl text-blue-600" />,
+    icon: <FaComments className="text-3xl" />,
     title: "Communication Strategy",
     items: [
       "Cultural message adaptation",
@@ -23,7 +16,7 @@ const servicesData = [
   },
   {
     id: 2,
-    icon: <FaGlobeEurope className="text-4xl text-blue-600" />,
+    icon: <FaGlobeEurope className="text-3xl" />,
     title: "International Digital Marketing",
     items: [
       "Localized advertising campaigns",
@@ -33,7 +26,7 @@ const servicesData = [
   },
   {
     id: 3,
-    icon: <FaRocket className="text-4xl text-blue-600" />,
+    icon: <FaRocket className="text-3xl" />,
     title: "Launch Support",
     items: [
       "Support during launch",
@@ -53,33 +46,30 @@ interface ServiceCardProps {
 const ServiceCard = ({ icon, title, items, index }: ServiceCardProps) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+      transition={{ duration: 0.5, delay: index * 0.15 }}
       viewport={{ once: true, margin: "-50px" }}
-      className="service-card bg-white rounded-2xl shadow-md p-8 flex flex-col h-full border border-white/10"
+      whileHover={{ y: -8 }}
+      className="group relative glass-card p-8 flex flex-col h-full overflow-hidden"
     >
-      <div className="flex items-center justify-center h-16 w-16 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl mb-4 mx-auto">
-        {icon}
-      </div>
-      <h3 className="text-xl font-heading font-semibold text-center mb-4">
-        {title}
-      </h3>
-      <ul className="space-y-2 mt-auto">
-        {items.map((item, i) => (
-          <li key={i} className="flex items-start">
-            <span className="text-blue-600 mr-2 mt-1">•</span>
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
-      <div className="mt-6 pt-4 border-t border-gray-100">
-        <a
-          href="#process"
-          className="flex items-center justify-center gap-2 text-blue-600 font-medium hover:text-blue-800 transition-colors"
-        >
-          Learn More <FaArrowRight className="text-sm" />
-        </a>
+      <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-transparent to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+      <div className="relative">
+        <div className="flex items-center justify-center h-14 w-14 rounded-2xl bg-gradient-to-br from-indigo-500 to-cyan-400 text-white mb-6 shadow-lg shadow-indigo-500/30">
+          {icon}
+        </div>
+        <h3 className="text-xl font-heading font-semibold text-white mb-5">
+          {title}
+        </h3>
+        <ul className="space-y-3">
+          {items.map((item, i) => (
+            <li key={i} className="flex items-start text-slate-400">
+              <span className="text-cyan-400 mr-3 mt-1">▸</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </motion.div>
   );
@@ -87,37 +77,37 @@ const ServiceCard = ({ icon, title, items, index }: ServiceCardProps) => {
 
 const ServicesSection = () => {
   return (
-    <section
-      id="services"
-      className="section-padding bg-gradient-to-b from-slate-950 to-blue-950"
-    >
-      <div className="container mx-auto px-4 md:px-6">
+    <section id="services" className="section-padding relative bg-[#050510]">
+      <div className="absolute top-0 left-1/3 w-[400px] h-[400px] bg-indigo-600/10 rounded-full blur-[120px]"></div>
+
+      <div className="container mx-auto px-4 md:px-6 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-16"
         >
-          <h2 className="font-heading font-semibold text-3xl md:text-5xl text-white mb-4">
-            My Services
+          <p className="eyebrow mb-4">Services</p>
+          <h2 className="section-title mb-4">
+            What I <span className="gradient-text">deliver.</span>
           </h2>
-          <p className="text-gray-300 max-w-3xl mx-auto text-lg">
+          <p className="text-slate-400 max-w-2xl mx-auto text-lg">
             Tailored solutions to support your international development
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {servicesData.map((service, index) => (
             <ServiceCard key={service.id} {...service} index={index} />
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-14 text-center">
           <motion.a
             href="#contact"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.96 }}
             className="btn btn-primary"
           >
             Request a Consultation
