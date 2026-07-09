@@ -4,6 +4,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import ProcessSection from "@/components/sections/ProcessSection";
 import AboutSection from "@/components/sections/AboutSection";
+import ExperienceSection from "@/components/sections/ExperienceSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroSection />
+        <ExperienceSection />
         <ServicesSection />
         <ProcessSection />
         <AboutSection />
