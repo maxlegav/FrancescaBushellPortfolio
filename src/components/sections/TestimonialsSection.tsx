@@ -21,7 +21,7 @@ const testimonials: Testimonial[] = [
     id: 1,
     quote:
       "Francesca provided valuable insights for our expansion into the Nordic region. Her cultural context and understanding of Scandinavian consumer behavior helped us adapt our messaging for our upcoming campaign launch and avoid several potential missteps.",
-    name: "Max Legav",
+    name: "Thomas Verhoeven",
     position: "Freelancer and Founder",
   },
   {
@@ -78,13 +78,18 @@ const TestimonialCard = ({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true, margin: "-50px" }}
-      className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-600 hover:shadow-xl transition-shadow"
+      className="bg-white rounded-2xl shadow-md p-8 border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
     >
       <FaQuoteLeft className="text-blue-200 text-4xl mb-4" />
       <p className="italic mb-6 text-gray-600">{quote}</p>
-      <div>
-        <p className="font-semibold text-gray-900">{name}</p>
-        <p className="text-sm text-gray-500">{position}</p>
+      <div className="flex items-center gap-3">
+        <div className="h-10 w-10 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-semibold">
+          {name.charAt(0)}
+        </div>
+        <div>
+          <p className="font-semibold text-gray-900">{name}</p>
+          <p className="text-sm text-gray-500">{position}</p>
+        </div>
       </div>
     </motion.div>
   );

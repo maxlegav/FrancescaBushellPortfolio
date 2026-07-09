@@ -94,9 +94,9 @@ const ProcessSection = () => {
                   className="flex-1 p-4"
                 >
                   <div
-                    className={`bg-white shadow-lg rounded-lg p-6 ${
+                    className={`bg-white shadow-lg rounded-2xl p-6 ${
                       index % 2 === 0 ? "md:mr-8" : "md:ml-8"
-                    } border-l-4 border-blue-600`}
+                    } border border-gray-100 hover:shadow-xl transition-shadow duration-300`}
                   >
                     <h3 className="font-heading font-semibold text-xl text-blue-600 mb-2">
                       Step {step.id}: {step.title}
@@ -120,7 +120,7 @@ const ProcessSection = () => {
                   whileInView={{ scale: 1 }}
                   transition={{ duration: 0.3 }}
                   viewport={{ once: true, margin: "-100px" }}
-                  className="flex items-center justify-center h-14 w-14 bg-blue-900 rounded-full my-4 md:my-0 text-white font-semibold shadow-lg z-10"
+                  className="flex items-center justify-center h-14 w-14 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-full my-4 md:my-0 text-white font-semibold shadow-lg shadow-blue-600/30 z-10"
                 >
                   {step.id}
                 </motion.div>
