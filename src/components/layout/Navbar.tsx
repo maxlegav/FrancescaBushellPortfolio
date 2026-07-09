@@ -39,7 +39,7 @@ const Navbar = () => {
         >
           Francesca Bushell
           <span className="block text-xs md:text-sm font-medium text-gray-300">
-            International Marketing
+            International Marketing · HEC Paris
           </span>
         </Link>
 

@@ -2,7 +2,12 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FaCheck, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import {
+  FaCheck,
+  FaLinkedin,
+  FaEnvelope,
+  FaGraduationCap,
+} from "react-icons/fa";
 
 const values = [
   "Expertise in international markets",
@@ -13,7 +18,7 @@ const values = [
 ];
 
 const certifications = [
-  "Master's in International Marketing - University of Paris",
+  "HEC Paris - International Business Program",
   "Google Digital Marketing Certification",
   "Facebook Blueprint Certification",
   "Intercultural Management Training",
@@ -53,6 +58,11 @@ const AboutSection = () => {
               About Me
             </h2>
 
+            <div className="badge bg-blue-500/10 border border-blue-400/30 text-blue-300 mb-6">
+              <FaGraduationCap />
+              Now part of HEC Paris
+            </div>
+
             <div className="prose max-w-none text-gray-300">
               <p className="text-lg mb-4">
                 Having lived in over five countries across Europe and Asia, I&apos;ve
@@ -63,7 +73,9 @@ const AboutSection = () => {
               </p>
 
               <p className="text-lg mb-6">
-              I
+                Now part of HEC Paris, one of Europe&apos;s leading business
+                schools, I combine world-class academic training in
+                international business with hands-on market experience. I
                 founded Brand Orbit to help companies navigate the complexities
                 of international expansion with culturally relevant,
                 audience-focused strategies. My approach combines practical
@@ -87,6 +99,26 @@ const AboutSection = () => {
                   >
                     <FaCheck className="text-green-500 mr-2 flex-shrink-0" />
                     <span className="text-gray-300">{value}</span>
+                  </motion.li>
+                ))}
+              </ul>
+
+              <h3 className="font-heading font-semibold text-xl text-blue-400 mt-8 mb-4">
+                Education & Certifications
+              </h3>
+
+              <ul className="space-y-2 mb-6">
+                {certifications.map((certification, index) => (
+                  <motion.li
+                    key={index}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="flex items-center"
+                  >
+                    <FaGraduationCap className="text-blue-400 mr-2 flex-shrink-0" />
+                    <span className="text-gray-300">{certification}</span>
                   </motion.li>
                 ))}
               </ul>

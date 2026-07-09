@@ -29,11 +29,11 @@
 
 @layer components {
   .btn {
-    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-md shadow-sm transition-all duration-300;
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-full shadow-sm transition-all duration-300;
   }
 
   .btn-primary {
-    @apply bg-blue-600 hover:bg-blue-800 text-white;
+    @apply bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white shadow-lg shadow-blue-600/25;
   }
 
   .btn-secondary {
@@ -54,6 +54,14 @@
 
   .section-padding {
     @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium;
   }
 }
 

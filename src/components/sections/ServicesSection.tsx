@@ -57,9 +57,9 @@ const ServiceCard = ({ icon, title, items, index }: ServiceCardProps) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true, margin: "-50px" }}
-      className="service-card bg-white rounded-lg shadow-md p-6 flex flex-col h-full"
+      className="service-card bg-white rounded-2xl shadow-md p-8 flex flex-col h-full border border-white/10"
     >
-      <div className="flex items-center justify-center h-16 w-16 bg-blue-100 rounded-full mb-4 mx-auto">
+      <div className="flex items-center justify-center h-16 w-16 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl mb-4 mx-auto">
         {icon}
       </div>
       <h3 className="text-xl font-heading font-semibold text-center mb-4">
@@ -87,7 +87,10 @@ const ServiceCard = ({ icon, title, items, index }: ServiceCardProps) => {
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="section-padding bg-blue-900">
+    <section
+      id="services"
+      className="section-padding bg-gradient-to-b from-slate-950 to-blue-950"
+    >
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
