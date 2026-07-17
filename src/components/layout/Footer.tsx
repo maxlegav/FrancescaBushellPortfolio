@@ -42,18 +42,18 @@ const Footer = () => {
       </div>
 
       <div className="container mx-auto px-4 md:px-6 py-12 border-t border-white/10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 [&>div]:min-w-0">
           {/* Contact Information */}
           <div>
             <h3 className="font-heading font-semibold text-lg mb-4 text-white">
               Contact
             </h3>
             <ul className="space-y-3">
-              <li className="flex items-center">
-                <FaEnvelope className="mr-3 text-indigo-400" />
+              <li className="flex items-center min-w-0">
+                <FaEnvelope className="mr-3 text-indigo-400 shrink-0" />
                 <a
                   href="mailto:francescaiidaolivia@gmail.com"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-white transition-colors break-all"
                 >
                   francescaiidaolivia@gmail.com
                 </a>
@@ -158,7 +158,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your email"
-                className="px-4 py-2 rounded-full bg-white/5 border border-white/15 focus:outline-none focus:border-indigo-400 text-white placeholder:text-slate-500"
+                className="w-full min-w-0 flex-1 px-4 py-2 rounded-full bg-white/5 border border-white/15 focus:outline-none focus:border-indigo-400 text-white placeholder:text-slate-500"
                 required
               />
               <button

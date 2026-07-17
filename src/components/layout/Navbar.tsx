@@ -50,7 +50,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-1 bg-white/5 border border-white/10 rounded-full px-2 py-1 backdrop-blur-md">
+        <nav className="hidden lg:flex items-center gap-1 bg-white/5 border border-white/10 rounded-full px-2 py-1 backdrop-blur-md">
           {navLinks.map((link) => (
             <Link
               key={link.label}
@@ -63,7 +63,7 @@ const Navbar = () => {
         </nav>
 
         {/* Social Links & CTA - Desktop */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden lg:flex items-center space-x-4">
           <a
             href="https://www.linkedin.com/in/francesca-bushell-7a34b5255/"
             target="_blank"
@@ -97,7 +97,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white"
+          className="lg:hidden text-white"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
@@ -128,7 +128,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-[#050510]/95 backdrop-blur-xl shadow-lg p-4 flex flex-col space-y-4 border-t border-white/10">
+          <div className="lg:hidden absolute top-full left-0 right-0 bg-[#050510]/95 backdrop-blur-xl shadow-lg p-4 flex flex-col space-y-4 border-t border-white/10">
             {navLinks.map((link) => (
               <Link
                 key={link.label}
