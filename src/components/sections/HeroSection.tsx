@@ -41,12 +41,12 @@ const HeroSection = () => {
             transition={{ duration: 0.7 }}
             className="order-2 lg:order-1"
           >
-            <div className="badge bg-white/5 border border-white/15 text-indigo-300 mb-6 backdrop-blur-md">
-              <FaGraduationCap className="text-indigo-400" />
-              HEC Paris · SOAS University of London · Korea University
+            <div className="badge flex-wrap max-w-full bg-white/5 border border-white/15 text-indigo-300 mb-6 backdrop-blur-md">
+              <FaGraduationCap className="text-indigo-400 shrink-0" />
+              <span>HEC Paris · SOAS London · Korea University</span>
             </div>
 
-            <h1 className="font-heading font-bold text-5xl md:text-7xl text-white mb-6 leading-[1.05] tracking-tight">
+            <h1 className="font-heading font-bold text-4xl sm:text-5xl md:text-7xl text-white mb-6 leading-[1.05] tracking-tight">
               Marketing without
               <br />
               <span className="gradient-text">borders.</span>
@@ -79,7 +79,7 @@ const HeroSection = () => {
               </motion.a>
             </div>
 
-            <div className="mt-12 grid grid-cols-3 gap-4 max-w-lg">
+            <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-lg">
               {stats.map((stat, i) => (
                 <motion.div
                   key={stat.label}
@@ -106,7 +106,7 @@ const HeroSection = () => {
           >
             <div className="relative">
               <div className="absolute -inset-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400 rounded-full blur-2xl opacity-30"></div>
-              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden ring-1 ring-white/20 bg-white/90 p-4">
+              <div className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-96 md:h-96 rounded-full overflow-hidden ring-1 ring-white/20 bg-white/90 p-4">
                 <Image
                   src="/imagelogo.jpeg"
                   alt="Francesca Bushell - International Marketing"

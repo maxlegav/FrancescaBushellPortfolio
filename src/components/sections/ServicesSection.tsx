@@ -77,7 +77,7 @@ const ServiceCard = ({ icon, title, items, index }: ServiceCardProps) => {
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="section-padding relative bg-[#050510]">
+    <section id="services" className="section-padding relative bg-[#050510] overflow-hidden">
       <div className="absolute top-0 left-1/3 w-[400px] h-[400px] bg-indigo-600/10 rounded-full blur-[120px]"></div>
 
       <div className="container mx-auto px-4 md:px-6 relative">

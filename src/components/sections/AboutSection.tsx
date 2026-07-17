@@ -44,7 +44,7 @@ const certifications = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="section-padding relative bg-[#050510]">
+    <section id="about" className="section-padding relative bg-[#050510] overflow-hidden">
       <div className="absolute bottom-0 left-0 w-[450px] h-[450px] bg-cyan-600/10 rounded-full blur-[120px]"></div>
 
       <div className="container mx-auto px-4 md:px-6 relative">
