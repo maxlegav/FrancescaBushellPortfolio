@@ -67,7 +67,7 @@ const TestimonialCard = ({
 
 const TestimonialsSection = () => {
   return (
-    <section className="section-padding relative bg-[#050510]">
+    <section className="section-padding relative bg-[#050510] overflow-hidden">
       <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-purple-600/10 rounded-full blur-[120px]"></div>
 
       <div className="container mx-auto px-4 md:px-6 relative">
