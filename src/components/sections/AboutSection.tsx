@@ -63,6 +63,7 @@ const AboutSection = () => {
                   src="/francesca.jpg"
                   alt="Francesca Bushell - Professional"
                   fill
+                  unoptimized
                   style={{ objectFit: "cover", objectPosition: "center 20%" }}
                 />
               </div>
