@@ -13,7 +13,7 @@ import {
 const education = [
   {
     school: "HEC Paris",
-    detail: "International Business",
+    detail: "Master in Marketing",
     note: "Now part of one of Europe's leading business schools",
   },
   {
@@ -60,10 +60,10 @@ const AboutSection = () => {
               <div className="absolute -inset-4 bg-gradient-to-br from-indigo-500/30 to-cyan-400/30 rounded-3xl blur-xl"></div>
               <div className="relative aspect-[4/5] rounded-3xl overflow-hidden glass-card p-4">
                 <Image
-                  src="/francesca.png"
+                  src="/francesca.jpg"
                   alt="Francesca Bushell - Professional"
                   fill
-                  style={{ objectFit: "contain", objectPosition: "center" }}
+                  style={{ objectFit: "cover", objectPosition: "center 20%" }}
                 />
               </div>
             </div>
@@ -108,7 +108,7 @@ const AboutSection = () => {
 
             <p className="text-lg text-slate-400 mb-8 leading-relaxed">
               Now part of HEC Paris, I combine world-class academic training in
-              international business with hands-on market experience. I founded
+              marketing with hands-on market experience. I founded
               BrandOrbit to help companies navigate international expansion
               with culturally relevant, audience-focused strategies.
             </p>

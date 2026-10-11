@@ -38,17 +38,6 @@ const experiences = [
       "Managed end-to-end digital content workflow, improving online visibility by 30%",
     ],
   },
-  {
-    id: 4,
-    company: "Baker McKenzie",
-    role: "Intern",
-    location: "Brussels, Belgium",
-    period: "Jun 2024 – Aug 2024",
-    highlights: [
-      "Supported multilingual documentation (English, French, Dutch) for major M&A transactions",
-      "Coordinated cross-border transactions spanning 40+ countries for global medtech and pharma clients",
-    ],
-  },
 ];
 
 const ExperienceSection = () => {

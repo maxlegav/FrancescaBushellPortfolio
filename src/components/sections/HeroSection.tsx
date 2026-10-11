@@ -106,15 +106,14 @@ const HeroSection = () => {
           >
             <div className="relative">
               <div className="absolute -inset-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400 rounded-full blur-2xl opacity-30"></div>
-              <div className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-96 md:h-96 rounded-full overflow-hidden ring-1 ring-white/20 bg-white/90 p-4">
+              <div className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-96 md:h-96 rounded-full overflow-hidden ring-1 ring-white/20">
                 <Image
-                  src="/imagelogo.jpeg"
+                  src="/francesca.jpg"
                   alt="Francesca Bushell - International Marketing"
                   fill
                   style={{
-                    objectFit: "contain",
-                    objectPosition: "center",
-                    transform: "scale(1.5)",
+                    objectFit: "cover",
+                    objectPosition: "center 18%",
                   }}
                   priority
                 />
