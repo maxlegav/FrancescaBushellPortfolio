@@ -74,7 +74,7 @@ const Navbar = () => {
             <FaLinkedin size={20} />
           </a>
           <a
-            href="/FrancescaCV.pdf"
+            href="/CV_Francesca_Bushell.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-slate-300 hover:text-white transition-colors"
@@ -152,7 +152,7 @@ const Navbar = () => {
                 <FaLinkedin size={20} />
               </a>
               <a
-                href="/FrancescaCV.pdf"
+                href="/CV_Francesca_Bushell.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-300 hover:text-white transition-colors"
